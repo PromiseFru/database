@@ -3,7 +3,7 @@ $(document).ready(() => {
     // Using the XMLHttpRequest function to get JSON file
     var xhr = new XMLHttpRequest();
     // accessing local directory with the open method
-    xhr.open('GET', 'db.json', true);
+    xhr.open('GET', 'https://raw.githubusercontent.com/PromiseFru/database/master/db.json');
 
     // giving commands when the JSON file is fetched and loaded
     xhr.onload = () => {
