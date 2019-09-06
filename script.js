@@ -7,17 +7,24 @@ function fileFetch() {
     // Using the XMLHttpRequest function to get JSON file
     var xhr = new XMLHttpRequest();
     // accessing local directory with the open method
-    xhr.open('GET', 'db.json');
+    xhr.open('GET', 'https://raw.githubusercontent.com/PromiseFru/database/master/db.json');
 
     // giving commands when the JSON file is fetched and loaded
     xhr.onload = () => {
-        // USING JSON.parse command to convert JSON text in Objects
-        var data = JSON.parse(xhr.response);
-        // render HTML with fetched data
-        renderHTML(data);
-        // sort fetched data
-        sortBtnClicked(data);
+        // error handling
+        if (xhr.status == 200) {
+            // USING JSON.parse command to convert JSON text in Objects
+            var data = JSON.parse(xhr.response);
+            // render HTML with fetched data
+            renderHTML(data);
+            // sort fetched data
+            sortBtnClicked(data);
+        } else {
+            var main = document.getElementById('main');
+            main.innerHTML = `<h4 class = "text-center mt-5" > An Error Occured ...</h4>`
+        }
     }
+
     // send response to client
     xhr.send();
 };
@@ -56,6 +63,7 @@ function sort(data) {
 
 // sort data when button clicked
 function sortBtnClicked(data) {
+    // fetch btn-sort id from HTML
     var btnSort = document.getElementById('btn-sort');
 
     btnSort.addEventListener('click', () => {
