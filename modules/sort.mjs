@@ -1,4 +1,4 @@
-import { dataholder } from "./dataholder.js";
+import { dataholder } from "./dataholder.mjs";
 
 //sort data by given data
 export function sort(data) {

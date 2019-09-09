@@ -1,16 +1,17 @@
+// AJAX
 import {
     mydata
-} from './modules/Ajax.js';
+} from './modules/Ajax.mjs';
 import {
     dataholder
-} from './modules/dataholder.js';
+} from './modules/dataholder.mjs';
 import {
     sortBtnClicked,
     searchbtnclicked
-} from './modules/buttons.js';
+} from './modules/buttons.mjs';
 import {
     searchgen
-} from './modules/search.js';
+} from './modules/search.mjs';
 
 $(document).ready(() => {
 

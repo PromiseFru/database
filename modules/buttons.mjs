@@ -1,5 +1,5 @@
-import { sort } from "./sort.js";
-import { search } from "./search.js";
+import { sort } from "./sort.mjs";
+import { search } from "./search.mjs";
 
 // sort data when button clicked
 export function sortBtnClicked(data) {

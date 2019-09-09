@@ -1,5 +1,9 @@
-import { dataholder } from "./dataholder.js";
-import { sortBtnClicked } from "./buttons.js";
+import {
+    dataholder
+} from "./dataholder.mjs";
+import {
+    sortBtnClicked
+} from "./buttons.mjs";
 
 // search through data for item that match
 export function search(data, searchbox) {
