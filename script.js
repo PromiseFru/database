@@ -11,12 +11,16 @@ import {
 
 $(document).ready(() => {
 
-    mydata('db.json',
+    //ajax call from ./module/ajax,js
+    mydata('https://raw.githubusercontent.com/PromiseFru/database/master/db.json',
         data => {
+            // dataholder call from ./module/dataholder.js
             dataholder(data);
+            // buttons calls from ./modules/buttons.js
             sortBtnClicked(data);
-            searchgen(data);
             searchbtnclicked(data);
+            // searchgen call from scipts.js
+            searchgen(data);
         });
 });
 
