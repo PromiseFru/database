@@ -8,6 +8,9 @@ import {
     sortBtnClicked,
     searchbtnclicked
 } from './modules/buttons.js';
+import {
+    searchgen
+} from './modules/search.js';
 
 $(document).ready(() => {
 
@@ -23,16 +26,3 @@ $(document).ready(() => {
             searchgen(data);
         });
 });
-
-// generate search data
-function searchgen(data) {
-    var dbList = document.getElementById('dblist');
-    var stuff = '';
-
-    for (let i in data) {
-        stuff += `
-        <option value="${data[i].meta_place}">
-        `
-    }
-    dbList.innerHTML = stuff;
-}

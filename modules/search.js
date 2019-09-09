@@ -9,3 +9,28 @@ export function search(data, searchbox) {
     dataholder(search);
     sortBtnClicked(search);
 }
+
+// generate search data
+export function searchgen(data) {
+    var dbList = document.getElementById('dblist');
+    var stuff = '';
+
+    for (let i in data) {
+        stuff += `
+        <option value="${data[i].meta_place}">
+        `
+    }
+
+    for (let i in data) {
+        stuff += `
+        <option value="${data[i].meta_time}">
+        `
+    }
+
+    for (let i in data) {
+        stuff += `
+        <option value="${data[i].meta_date}">
+        `
+    }
+    dbList.innerHTML = stuff;
+}
