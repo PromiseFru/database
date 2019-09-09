@@ -1,14 +1,14 @@
 $(document).ready(() => {
 
-    //ajax call from ./module/ajax,js
+    //ajax call
     mydata('https://raw.githubusercontent.com/PromiseFru/database/master/db.json',
         data => {
-            // dataholder call from ./module/dataholder.js
+            // dataholder call
             dataholder(data);
-            // buttons calls from ./modules/buttons.js
+            // buttons calls
             sortBtnClicked(data);
             searchbtnclicked(data);
-            // searchgen call from scipts.js
+            // searchgen call
             searchgen(data);
         });
 });
