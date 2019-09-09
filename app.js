@@ -24,5 +24,6 @@ connection.query('SELECT * FROM employees', (err,rows) => {
 
 });
 
+const searchBox; / = document.querySelector("data-Search-box");
 
 
