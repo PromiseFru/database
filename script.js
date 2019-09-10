@@ -52,6 +52,7 @@ function searchbtnclicked(data) {
     searchbtn.addEventListener('click', () => {
         search(data, searchbox);
     })
+  
 }
 
 // SEARCH
@@ -114,6 +115,11 @@ function renderHTML(data) {
             <td scope="row">${data[i].meta_time}</td>
             <td>${data[i].meta_place}</td>
             <td>${data[i].meta_date}</td>
+            <td scope="row">${data[i].meta_time}</td>
+            <td>${data[i].meta_place}</td>
+            <td>${data[i].meta_date}</td>
+            <td scope="row">${data[i].meta_time}</td>
+            <td>${data[i].meta_place}</td>
         </tr>
         `
     }
