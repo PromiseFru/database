@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>myCode</title>
+    <title>Index</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -10,71 +10,154 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <!-- font-awsome CSS-->
+    <!-- font-awsome CSS-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css">
 
 </head>
 
 <body>
     <!-- navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+    <nav class="navbar navbar-expand-sm navbar-light bg-light ">
+        <a class="navbar-brand" href="#">Database</a>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-              <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Dropdown
-                  </a>
-                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                  </div>
+        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
+            aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+
+                <li class="nav-item ">
+                    <a class="nav-link" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true"
+                        onclick="document.location.reload(true)" aria-expanded="false"> <i class="fa fa-refresh"
+                            aria-hidden="true"></i>
+                    </a>
                 </li>
 
                 <li class="nav-item ">
                     <a class="nav-link" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true"
-                        onclick="document.location.reload(true)" aria-expanded="false"><i class="fa fa-refresh"
-                aria-hidden="false"></i>
-
+                        aria-expanded="false"> <i class="fa fa-save" aria-hidden="true"></i>
                     </a>
                 </li>
-          
-          </ul>
-          <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-          </form>
+                <li class="nav-item ">
+                    <a class="nav-link" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false"><i class="fas fa-ellipsis-v"></i>
+                    </a>
+                </li>
+
+            </ul>
+            <button class="btn btn-outline-success my-2 my-sm-0 bg-success text-light" type="button">Edit
+                Design</button>
+            <button class="btn btn-outline-secondary my-2 my-sm-0 ml-1 rounded-0 text-success"><i
+                    class="fas fa-plus"></i></button>
+            <button class="btn btn-outline-secondary my-2 my-sm-0 ml-1 rounded-0"><i
+                    class="fas fa-file-export"></i></button>
+            <button class="btn btn-outline-secondary my-2 my-sm-0 rounded-0 border-left-0"><i
+                    class="fas fa-envelope"></i></button>
+            <button class="btn btn-outline-secondary my-2 my-sm-0 rounded-0 border-left-0"><i
+                    class="fas fa-share-alt"></i></button>
+            <button class="btn btn-outline-secondary my-2 my-sm-0 rounded-0 border-left-0"><i
+                    class="fas fa-cloud-upload-alt"></i></button>
+            <button class="btn btn-outline-secondary my-2 my-sm-0 rounded-0 border-left-0"><i
+                    class="far fa-comment-alt"></i></button>
+
         </div>
-      </nav> 
-      <!-- end nav-->
+    </nav>
+    <!-- second nav -->
+
+    <nav class="navbar navbar-expand-sm navbar-light bg-light mb-sm-1 ">
+
+        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
+            aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+
+                <li class="nav-item ">
+                    <button class="btn btn-outline-secondary my-2 my-sm-0 py-sm-1 rounded-0" type="button"><i
+                            class="fa fa-file-import"></i> Import Data</button>
+                </li>
+
+                <li class="nav-item ">
+                    <div class="dropdown">
+                        <button class="btn btn-outline-secondary my-2 my-sm-0 ml-1 py-sm-1 rounded-0 dropdown-toggle"
+                            type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false" data-toggle-second="tooltip" data-placement="right"
+                            title="Tooltip on right">
+                            Filter
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownId">
+                            <a class="dropdown-item" href="#">id</a>
+                            <a class="dropdown-item" href="#">Date</a>
+                            <a class="dropdown-item" href="#">Region</a>
+                            <a class="dropdown-item" href="#">Product Category</a>
+                            <a class="dropdown-item" href="#">Product</a>
+                            <a class="dropdown-item" href="#">Customer Name</a>
+                            <a class="dropdown-item" href="#">Sales</a>
+                            <a class="dropdown-item" href="#">Cost</a>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="nav-item ">
+                    <button class="btn btn-outline-secondary my-2 my-sm-0 ml-1 py-sm-1 rounded-0" type="button"
+                        id="btn-sort">Sort</button>
+                </li>
+
+                <li class="nav-item ">
+                    <button class="btn btn-outline-secondary my-2 my-sm-0 ml-1 py-sm-1 rounded-0"
+                        type="button">Add</button>
+                </li>
+
+                <li class="nav-item ">
+                    <button class="btn btn-outline-secondary my-2 my-sm-0 py-sm-1 rounded-0 border-left-0"
+                        type="button">Delete</button>
+                </li>
+
+                <li class="nav-item ">
+                    <button class="btn btn-outline-secondary my-2 my-sm-0 ml-1 py-sm-1 rounded-0"
+                        type="button">Merge</button>
+                </li>
+
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control border border-secondary py-1  border-right-0" type="text"
+                    placeholder="Search" id="searchbox" list="dblist">
+                <!-- list of available search -->
+                <datalist id="dblist">
+                    <!-- generated by JS -->
+                </datalist>
+
+                <button id="searchbtn" type="button"
+                    class="btn btn-outline-secondary my-2 my-sm-0 rounded-0 border-left-0"><i
+                        class="fas fa-search"></i></button>
+
+            </form>
+        </div>
+    </nav>
+
+
 
     <!-- body container -->
-    <div class="container-fluid">
-        <div class="row p-5">
-            <div class="col-md-12">
-                <h1 class="text-center">Some Database Results</h1>
-            </div>
+    <div class="container-fluid" id="main">
+        <div class="row ">
             <div class="col-md-12">
                 <!-- result table -->
-                <table class="table text-center">
-                    <thead>
+                <table class="table table-bordered">
+                    <thead class="thead-light">
                         <tr>
-                            <th>META_TIME</th>
-                            <th>META_PLACE</th>
-                            <th>META_DATE</th>
-                            <th>META_TIME</th>
-                            <th>META_PLACE</th>
-                            <th>META_DATE</th>
-                            <th>META_TIME</th>
-                            <th>META_PLACE</th>
-                            <th>META_DATE</th>
+                            <th><i class="fa fa-list"></i></th>
+                            <th><i class="far fa-calendar-alt"></i> Date</th>
+                            <th><i class="fa fa-italic"></i> Region</th>
+                            <th><i class="fa fa-italic"></i> Product Category</th>
+                            <th><i class="fa fa-italic"></i> Product</th>
+                            <th><i class="fa fa-italic"></i> Customer Name</th>
+                            <th><i class="fas fa-receipt"></i> Sales</th>
+                            <th><i class="fas fa-receipt"></i> Cost</th>
                         </tr>
+
                     </thead>
                     <tbody id="results">
                         <!-- JS GENERATES RESULTS -->
@@ -98,7 +181,6 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
     <!-- custom js -->
-    <script src="script.js"></script>
     <script src="app.js"></script>
 </body>
 
